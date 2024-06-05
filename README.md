@@ -2,17 +2,17 @@
 
 ***Zhuang ShengLi Database Presented***
 
-Project: ![GitHub Repo stars](https://img.shields.io/github/stars/KCISHacker/StudList)
+Repo: ![GitHub Repo stars](https://img.shields.io/github/stars/KCISHacker/StudList)
 
 ## Contents
 
 A Json list containing students' information from grade 7 to grade 9 of 2023.
 
-To get the update script for this list, pls go to [update/](https://kcishacker.github.io/update/)
+To get the update script for this list, pls go to [update/](https://kcishacker.github.io/StudList/update/)
 
-To view the list, pls go to [main.html](https://kcishacler.github.io/main.html)
+To view the list, pls go to [main.html](https://kcishacker.github.io/StudList/main.html)
 
-To get the Json list, pls go to [data.json](https://kcishacker.github.io/data.json)
+To get the Json list, pls go to [data.json](https://kcishacker.github.io/StudList/data.json)
 
 Enjoy:)
 
@@ -25,7 +25,7 @@ All rights reserved.
 
 MIT Licence
 
-Copyright (c) 2024 庄胜利DB
+Copyright (c) 2024 KCISHackers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
