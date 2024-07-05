@@ -2,7 +2,9 @@ function randomIntFromInterval(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function loadData(){
+async function load(){
+	await loadData();
+	loadLastUpdate();
 	var table = document.getElementById("query-table");
 	var stud = studs[randomIntFromInterval(0, count-1)];
 	console.log("Selected Studs:");
@@ -23,4 +25,4 @@ function loadData(){
 	</div>
 	</li>`;
 }
-window.onload = loadData;
+window.onload = load;

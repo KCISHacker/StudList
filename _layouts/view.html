@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./assets/data.js"></script>
+  <script src="./assets/view.js"></script>
+  <link rel="stylesheet" media="all" href="./assets/view.css">
+  <link rel="stylesheet" media="all" href="./assets/main.css">
+  <title>KCIS Stud. List - Friendly View</title>
+</head>
+
+<body>
+  <div class="main">
+    <div id="title" class="last-update-label title">Last Update: Loading...</div><br>
+    <form onsubmit="return submit_search()">
+      <div>
+        <select class="transition inp" id="grade" name="grade">
+          <option value="a">All</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+        </select>
+        <select class="transition inp" id="category" name="category">
+          <option value="a">Any: </option>
+          <option value="i">Id: </option>
+          <option value="n">Name: </option>
+          <option value="p">Pinyin: </option>
+          <option value="b">Birthday: </option>
+          <option value="h">Homeroom: </option>
+          <option value="c">Card Id: </option>
+        </select>
+        <input type="text" class="transition inp" id="search" name="search">
+        <input type="submit" class="transition inp button" value="Search">
+        <small>(<a href="https://en.wikipedia.org/wiki/Regular_expression">Regular expression</a> supported)</small>
+      </div>
+    </form>
+    <br><a href="./random.html">Random</a>
+    <br>
+    <div class="data-count-label">
+      <div class="inline" id="data-count">Loading...</div> dat<div class="inline" id="data-tip">a</div> found
+    </div>
+    {% include list.html %}
+  </div>
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 
 ***Zhuang ShengLi Database Presented***
 
-Repo: ![GitHub Repo stars](https://img.shields.io/github/stars/KCISHacker/StudList)
+Full doc at [KCISHacker Docs](https://kcishacker.github.io/docs/StudList)
 
 ## Contents
 
