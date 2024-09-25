@@ -8,7 +8,7 @@ Full doc at [KCISHacker Docs](https://kcishacker.github.io/docs/StudList)
 
 A Json list containing students' information from grade 7 to grade 9 of 2023.
 
-To get the update script for this list, pls go to [update/](https://kcishacker.github.io/StudList/update/)
+To get the update script for this list, pls go to [KCISHacker/StudListUpdater](/KCISHacker/StudListUpdater)
 
 To view the list, pls go to [main.html](https://kcishacker.github.io/StudList/main.html)
 
