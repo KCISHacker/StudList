@@ -1,9 +1,17 @@
+:root{
+	--error-color: red;
+	--not-avaliable-color: red;
+	--background-color: floralwhite;
+	--foregorund-color: antiquewhite;
+	--text-color: black;
+}
+
 .main {
 	border: 2px dashed;
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
-	background-color: floralwhite;
+	background-color: var(--background-color);
 }
 
 body {
@@ -27,15 +35,19 @@ li {
 }
 
 .table-header {
-	background-color: antiquewhite;
+	background-color: var(--foregorund-color);
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
 }
 
 .table-row {
-	background-color: floralwhite;
+	background-color: var(--background-color);
 	box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.disabled.table-row{
+	color: var(--not-avaliable-color);
 }
 
 .col-1 {
@@ -98,8 +110,8 @@ li {
 .button {
 	height: 25px;
 	cursor: pointer;
-	color: black;
-	background-color: antiquewhite;
+	color: var(--text-color);
+	background-color: var(--foregorund-color);
 }
 
 .button:hover {
@@ -114,4 +126,9 @@ div .inline {
 .data-count-label {
 	margin-top: 10px;
 	font-size: 20px;
+}
+
+.error{
+	color: var(--error-color);
+	font-style: italic;
 }

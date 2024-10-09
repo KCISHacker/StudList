@@ -1,3 +1,3 @@
 ---
-layouts: random
+layout: random
 ---

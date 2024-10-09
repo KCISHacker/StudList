@@ -12,7 +12,7 @@ async function loadData(){
         studs = undefined;
         count = undefined;
         last_update = undefined;
-        alert('Cannot access data file: data.json. Error ' + error.message);
+        alert('Cannot access data file: data.json. Error: ' + error.message);
     })
 }
 

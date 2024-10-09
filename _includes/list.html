@@ -23,4 +23,28 @@
     </div>
     </li> -->
 </ul>
+<script>
+	function info_to_li(stud){
+        function return_none_if_no_value(value){
+            if (!value && value != false) return "[Unknown]";
+            return value;
+        }
+		is_boarded_is_null = stud.is_boarded != false && !stud.is_boarded;
+		do_stay_at_self_study_is_null = stud.do_stay_at_self_study != false && !stud.do_stay_at_self_study;
+		return `<li class="table-row${stud.active ? '' : ' disabled'}">
+		<div class="col col-1" data-label="Id">${return_none_if_no_value(stud.id)}</div>
+		<div class="col col-2" data-label="Name">${return_none_if_no_value(stud.chinese_name)}
+            (${return_none_if_no_value(stud.english_name)})</div>
+		<div class="col col-2" data-label="Pinyin">${return_none_if_no_value(stud.pinyin)}</div>
+		<div class="col col-1" data-label="Birthday">${return_none_if_no_value(stud.birthday)}</div>
+		<div class="col col-2" data-label="Homeroom">${return_none_if_no_value(stud.homeroom)}</div>
+		<div class="col col-2" data-label="Card Id">${return_none_if_no_value(stud.card_id)}</div>
+		<div class="col col-2" data-label="Dorm">
+			<input type="checkbox" ${stud.is_boarded?'checked':(is_boarded_is_null ? 'style=\'display: none;\'' : '')} disabled>${is_boarded_is_null ? '<span class="error">[Unknow]</span>&nbsp;' : ''}Boarded;
+			<br>
+			<input type="checkbox" ${stud.do_stay_at_self_study?'checked':(do_stay_at_self_study_is_null ? 'style=\'display: none;\'' : '')} disabled>${do_stay_at_self_study_is_null ? '<span class="error">[Unknow]</span>&nbsp;' : ''}Self Study
+		</div>
+		</li>`;
+	}
+</script>
 </div>
